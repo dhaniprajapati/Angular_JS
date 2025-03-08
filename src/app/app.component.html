@@ -1,6 +1,13 @@
 <div>
-  <h1>{{message}}</h1>
-  <img [src]="imgUrl" (click)="onClick($event)" 
+  <h1>Hello {{userName }} from BridgeLabz</h1>
+  <img [src]="imgUrl" 
+  (click)="onClick($event)" 
   alt="The BridgeLabz logo: a bridge to employment through a lab works."
   />
 </div>
+<div>
+  <input type="text" 
+  [(ngModel)]="userName" 
+  placeholder="Enter your name" /> 
+</div>
+
